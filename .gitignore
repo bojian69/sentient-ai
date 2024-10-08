@@ -1,0 +1,10 @@
+.venv/
+__pycache__
+log_files/
+logs/
+.DS_STORE
+results/
+dist/
+test.py
+.env
+.idea/
