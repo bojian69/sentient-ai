@@ -9,7 +9,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(CURRENT_FILE_PATH
 
 # Define other paths relative to the project root
 PROJECT_SOURCE_ROOT = os.path.join(PROJECT_ROOT, "sentient")
-SOURCE_LOG_FOLDER_PATH = os.path.join(PROJECT_SOURCE_ROOT, "log_files")
+SOURCE_LOG_FOLDER_PATH = os.path.join(PROJECT_SOURCE_ROOT, "demo_log_files")
 PROJECT_TEMP_PATH = os.path.join(PROJECT_SOURCE_ROOT, "temp")
 TASK_INSTRUCTION_PATH = os.path.join(PROJECT_SOURCE_ROOT, "task_instructions")
 PROJECT_TEST_ROOT = os.path.join(PROJECT_SOURCE_ROOT, "test")
