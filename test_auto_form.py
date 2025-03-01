@@ -67,8 +67,8 @@ class TesAutoForm(IsolatedAsyncioTestCase):
         try:
             message = (f'open the {self.web_url};'
                        f'fill the form fields with the following information: First Name:bojian, Last Name:li,'
-                       f'Email:boj@uhomes.com, Phone Number:+86 13011070322, Additional Notes Beijing'
-                       f'click the submit button, screenshot this page image base64 format.')
+                       f'Email:boj@uhomes.com, Phone Number:+86 13011070322, Additional Notes: Beijing'
+                       f'click the submit button, screenshot this page.')
 
             response = await sentient.invoke(
                 goal=message,
