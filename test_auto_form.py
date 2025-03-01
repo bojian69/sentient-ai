@@ -58,17 +58,19 @@ class TesAutoForm(IsolatedAsyncioTestCase):
             print(e)
 
     # 提供URL地址和goal自动填充表单字段
-    async def test_auto_fill_form_field(self):
+    async def test_auto_fill_form(self):
         try:
-            message = (f'open the {self.web_url}, retrieve the fields name for this page form, screenshot this '
-                       f'page image base64 format.')
+            message = (f'open the {self.web_url};'
+                       f'fill the form fields with the following information: First Name:bojian, Last Name:li,'
+                       f'Email:boj@uhomes.com, Phone Number:+86 13011070322;'
+                       f'click the submit button, screenshot this page image base64 format.')
 
             response = await sentient.invoke(
                 goal=message,
                 provider="together",
                 model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
 
-            await self.result_to_file(response, 'test_auto_fill_form_field_response')
+            await self.result_to_file(response, 'test_auto_fill_form_response')
 
         except Exception as e:
             print(e)
