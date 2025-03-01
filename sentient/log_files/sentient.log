@@ -1,0 +1,127 @@
+Task instructions loaded from: /Users/libojian/github-bojian/selenium/sentient/task_instructions/task_instructions.txt
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.06819796562194824 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.07491922378540039 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.06781506538391113 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.07539200782775879 seconds
+Opening URL: https://enpc1.uhomes.com/hackson
+Successfully loaded page: https://enpc1.uhomes.com/hackson
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.19780921936035156 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.24026918411254883 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.22614097595214844 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.21666693687438965 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.22562408447265625 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.21177387237548828 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.24027204513549805 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.21013784408569336 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.24238991737365723 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.21768403053283691 seconds
+Entering text: EnterTextEntry(query_selector="[mmid='71']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='71']
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.30921196937561035 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.3045649528503418 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.32997703552246094 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.3738548755645752 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.3510608673095703 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.29762983322143555 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.3169667720794678 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.32091498374938965 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.29349493980407715 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.38587021827697754 seconds
+Entering text: EnterTextEntry(query_selector="[mmid='278']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='278']
+Entering text: EnterTextEntry(query_selector="[mmid='284']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='284']
+Entering text: EnterTextEntry(query_selector="[mmid='289']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='289']
+Entering text: EnterTextEntry(query_selector="[mmid='299']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='299']
+Entering text: EnterTextEntry(query_selector="[mmid='304']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='304']
+Entering text: EnterTextEntry(query_selector="[mmid='310']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='310']
+Entering text: EnterTextEntry(query_selector="[mmid='316']", text='')
+Executing press_key_combination with key combo: Control+A
+Executing press_key_combination with key combo: Backspace
+Success. Text "" set successfully in the element with selector [mmid='316']
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.32184815406799316 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.27765893936157227 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.2448902130126953 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.2917759418487549 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.27312469482421875 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.3888278007507324 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.323962926864624 seconds
+Unexpected error: local variable 'response' referenced before assignment
+Executing Get DOM Command based on content_type: all_fields
+Get DOM Command executed in 0.37842893600463867 seconds

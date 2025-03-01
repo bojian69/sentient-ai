@@ -1,8 +1,10 @@
 from unittest import IsolatedAsyncioTestCase
 import os, asyncio
-from dotenv import load_dotenv
 from together import AsyncTogether
+from sentient import sentient
+from dotenv import load_dotenv
 import re
+
 
 load_dotenv()
 
@@ -35,6 +37,23 @@ class TesAutoForm(IsolatedAsyncioTestCase):
 
         except Exception as e:
             print(e)
+
+    async def test_auto_fill_form(self):
+        try:
+            web_url = 'https://enpc1.uhomes.com/hackson'
+            message = f'Open the {web_url} and retrieve the fields name for this page form'
+
+            result = await sentient.invoke(
+                goal=message,
+                provider="together",
+                model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
+
+            print(result)
+
+        except Exception as e:
+            print(e)
+
+
 
     async def asyncTearDown(self):
         # Clean up resources if needed

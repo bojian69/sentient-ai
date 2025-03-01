@@ -1,0 +1,576 @@
+{
+  "role": "WebArea",
+  "name": "uhomes.com",
+  "children": [
+    {
+      "role": "text",
+      "name": "\ue704"
+    },
+    {
+      "role": "link",
+      "name": "\ue8bb",
+      "keyshortcuts": "69"
+    },
+    {
+      "role": "textbox",
+      "name": "Search City | University | Neighborhood | Property",
+      "keyshortcuts": "75"
+    },
+    {
+      "role": "text",
+      "name": "\ue8f0"
+    },
+    {
+      "role": "heading",
+      "name": "Rental Application Form",
+      "keyshortcuts": "208",
+      "level": 2
+    },
+    {
+      "role": "text",
+      "name": "Please fill out all required information below"
+    },
+    {
+      "role": "heading",
+      "name": "Personal Information",
+      "keyshortcuts": "211",
+      "level": 3
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "First Name"
+    },
+    {
+      "role": "textbox",
+      "name": "Enter your first name",
+      "keyshortcuts": "218"
+    },
+    {
+      "role": "text",
+      "name": "First name is required"
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "Last Name"
+    },
+    {
+      "role": "textbox",
+      "name": "Enter your last name",
+      "keyshortcuts": "225"
+    },
+    {
+      "role": "text",
+      "name": "Last name is required"
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "Birthday"
+    },
+    {
+      "role": "textbox",
+      "name": "Select your birthday",
+      "keyshortcuts": "231"
+    },
+    {
+      "role": "text",
+      "name": "\ue78e"
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "Email"
+    },
+    {
+      "role": "textbox",
+      "name": "example@email.com",
+      "keyshortcuts": "241"
+    },
+    {
+      "role": "text",
+      "name": "Email is required"
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "Phone Number"
+    },
+    {
+      "role": "textbox",
+      "name": "(555) 000-0000",
+      "keyshortcuts": "247"
+    },
+    {
+      "role": "text",
+      "name": "Phone number is required"
+    },
+    {
+      "role": "heading",
+      "name": "Academic Information",
+      "keyshortcuts": "249",
+      "level": 3
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "University Name"
+    },
+    {
+      "role": "textbox",
+      "name": "Enter your university name",
+      "keyshortcuts": "254"
+    },
+    {
+      "role": "text",
+      "name": "University name is required"
+    },
+    {
+      "role": "text",
+      "name": "*"
+    },
+    {
+      "role": "text",
+      "name": "Nationality"
+    },
+    {
+      "role": "textbox",
+      "name": "Select your nationality",
+      "keyshortcuts": "261",
+      "readonly": true
+    },
+    {
+      "role": "text",
+      "name": "\ue6e1"
+    },
+    {
+      "role": "heading",
+      "name": "Additional Information",
+      "keyshortcuts": "293",
+      "level": 3
+    },
+    {
+      "role": "text",
+      "name": "Additional Notes"
+    },
+    {
+      "role": "textbox",
+      "name": "Please provide any additional information",
+      "keyshortcuts": "298",
+      "multiline": true
+    },
+    {
+      "role": "button",
+      "name": "Clear Form",
+      "keyshortcuts": "300"
+    },
+    {
+      "role": "button",
+      "name": "Submit Application",
+      "keyshortcuts": "302"
+    },
+    {
+      "role": "text",
+      "name": "uhomes.com is a global student accommodation marketplace that offers over 2 million beds in 500+ popular cities worldwide, dedicated to finding international students the best student homes at affordable prices. Partnered with leading student services brands, we ensure students the easiest life while pursuing higher education."
+    },
+    {
+      "role": "link",
+      "name": "4.9/5 on Trustpilot Excellent Rated",
+      "keyshortcuts": "322"
+    },
+    {
+      "role": "text",
+      "name": "\ue878"
+    },
+    {
+      "role": "text",
+      "name": "English"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a1"
+    },
+    {
+      "role": "text",
+      "name": "Popular Cities"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a1"
+    },
+    {
+      "role": "link",
+      "name": "London",
+      "keyshortcuts": "361"
+    },
+    {
+      "role": "link",
+      "name": "Glasgow",
+      "keyshortcuts": "362"
+    },
+    {
+      "role": "link",
+      "name": "Manchester",
+      "keyshortcuts": "363"
+    },
+    {
+      "role": "link",
+      "name": "Sydney",
+      "keyshortcuts": "364"
+    },
+    {
+      "role": "link",
+      "name": "Melbourne",
+      "keyshortcuts": "365"
+    },
+    {
+      "role": "link",
+      "name": "Leeds",
+      "keyshortcuts": "366"
+    },
+    {
+      "role": "link",
+      "name": "Sheffield",
+      "keyshortcuts": "367"
+    },
+    {
+      "role": "link",
+      "name": "Southampton",
+      "keyshortcuts": "368"
+    },
+    {
+      "role": "link",
+      "name": "Birmingham",
+      "keyshortcuts": "369"
+    },
+    {
+      "role": "link",
+      "name": "Liverpool",
+      "keyshortcuts": "370"
+    },
+    {
+      "role": "link",
+      "name": "Edinburgh",
+      "keyshortcuts": "371"
+    },
+    {
+      "role": "link",
+      "name": "New York",
+      "keyshortcuts": "372"
+    },
+    {
+      "role": "link",
+      "name": "Coventry",
+      "keyshortcuts": "373"
+    },
+    {
+      "role": "link",
+      "name": "Newcastle",
+      "keyshortcuts": "374"
+    },
+    {
+      "role": "link",
+      "name": "Toronto",
+      "keyshortcuts": "375"
+    },
+    {
+      "role": "text",
+      "name": "Top Universities"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a1"
+    },
+    {
+      "role": "link",
+      "name": "University of Glasgow",
+      "keyshortcuts": "380"
+    },
+    {
+      "role": "link",
+      "name": "University of Manchester",
+      "keyshortcuts": "381"
+    },
+    {
+      "role": "link",
+      "name": "University College London (UCL)",
+      "keyshortcuts": "382"
+    },
+    {
+      "role": "link",
+      "name": "University of Sheffield",
+      "keyshortcuts": "383"
+    },
+    {
+      "role": "link",
+      "name": "University of Leeds",
+      "keyshortcuts": "384"
+    },
+    {
+      "role": "link",
+      "name": "University of Liverpool",
+      "keyshortcuts": "385"
+    },
+    {
+      "role": "link",
+      "name": "University of Sydney",
+      "keyshortcuts": "386"
+    },
+    {
+      "role": "link",
+      "name": "University of Birmingham",
+      "keyshortcuts": "387"
+    },
+    {
+      "role": "link",
+      "name": "King's College London (KCL)",
+      "keyshortcuts": "388"
+    },
+    {
+      "role": "link",
+      "name": "University of Melbourne",
+      "keyshortcuts": "389"
+    },
+    {
+      "role": "link",
+      "name": "University of Southampton",
+      "keyshortcuts": "390"
+    },
+    {
+      "role": "link",
+      "name": "University of Queensland",
+      "keyshortcuts": "391"
+    },
+    {
+      "role": "link",
+      "name": "University of New South Wales (UNSW)",
+      "keyshortcuts": "392"
+    },
+    {
+      "role": "link",
+      "name": "University of Warwick",
+      "keyshortcuts": "393"
+    },
+    {
+      "role": "link",
+      "name": "Newcastle University",
+      "keyshortcuts": "394"
+    },
+    {
+      "role": "link",
+      "name": "Northeastern University (Boston)",
+      "keyshortcuts": "395"
+    },
+    {
+      "role": "text",
+      "name": "Company"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a1"
+    },
+    {
+      "role": "link",
+      "name": "About Us",
+      "keyshortcuts": "400"
+    },
+    {
+      "role": "link",
+      "name": "Careers",
+      "keyshortcuts": "401"
+    },
+    {
+      "role": "text",
+      "name": "Refer to Earn"
+    },
+    {
+      "role": "text",
+      "name": "\u00a350"
+    },
+    {
+      "role": "link",
+      "name": "uhomes+ New",
+      "keyshortcuts": "405"
+    },
+    {
+      "role": "link",
+      "name": "Accommodation",
+      "keyshortcuts": "407"
+    },
+    {
+      "role": "text",
+      "name": "Partnership"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a1"
+    },
+    {
+      "role": "link",
+      "name": "Become Partner",
+      "keyshortcuts": "412"
+    },
+    {
+      "role": "text",
+      "name": "Partner Login"
+    },
+    {
+      "role": "link",
+      "name": "Add Property",
+      "keyshortcuts": "414"
+    },
+    {
+      "role": "text",
+      "name": "Support"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a1"
+    },
+    {
+      "role": "text",
+      "name": "\ue8cb"
+    },
+    {
+      "role": "link",
+      "name": "Help Center",
+      "keyshortcuts": "421"
+    },
+    {
+      "role": "text",
+      "name": "\ue7c0"
+    },
+    {
+      "role": "text",
+      "name": "WhatsApp"
+    },
+    {
+      "role": "text",
+      "name": "\ue72c"
+    },
+    {
+      "role": "link",
+      "name": "+44 207 631 5139",
+      "keyshortcuts": "427"
+    },
+    {
+      "role": "text",
+      "name": "\ue6a7"
+    },
+    {
+      "role": "link",
+      "name": "Contact Us",
+      "keyshortcuts": "430"
+    },
+    {
+      "role": "text",
+      "name": "Download our APP"
+    },
+    {
+      "role": "link",
+      "name": "",
+      "keyshortcuts": "435"
+    },
+    {
+      "role": "link",
+      "name": "",
+      "keyshortcuts": "437"
+    },
+    {
+      "role": "text",
+      "name": "Payment Methods"
+    },
+    {
+      "role": "text",
+      "name": "Media"
+    },
+    {
+      "role": "link",
+      "name": "",
+      "keyshortcuts": "447"
+    },
+    {
+      "role": "link",
+      "name": "",
+      "keyshortcuts": "449"
+    },
+    {
+      "role": "link",
+      "name": "",
+      "keyshortcuts": "451"
+    },
+    {
+      "role": "link",
+      "name": "",
+      "keyshortcuts": "453"
+    },
+    {
+      "role": "link",
+      "name": "Terms",
+      "keyshortcuts": "459"
+    },
+    {
+      "role": "text",
+      "name": " \u00b7 "
+    },
+    {
+      "role": "link",
+      "name": "Privacy",
+      "keyshortcuts": "460"
+    },
+    {
+      "role": "text",
+      "name": " \u00b7 "
+    },
+    {
+      "role": "link",
+      "name": "Cookies",
+      "keyshortcuts": "461"
+    },
+    {
+      "role": "text",
+      "name": " \u00b7 "
+    },
+    {
+      "role": "link",
+      "name": "Info Docs",
+      "keyshortcuts": "462"
+    },
+    {
+      "role": "text",
+      "name": " \u00b7 "
+    },
+    {
+      "role": "link",
+      "name": "Sitemap",
+      "keyshortcuts": "463"
+    },
+    {
+      "role": "text",
+      "name": "\u00a9"
+    },
+    {
+      "role": "text",
+      "name": " 2025 uhomes.com"
+    }
+  ]
+}
