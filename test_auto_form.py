@@ -11,6 +11,7 @@ load_dotenv()
 
 class TesAutoForm(IsolatedAsyncioTestCase):
     async_client = None
+    web_url = 'https://enpc1.uhomes.com/hackson'
 
     async def asyncSetUp(self):
         print("setUp: start")
@@ -19,7 +20,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
         print("setUp: end")
 
     # 提取会话文案-预检模版缺失项
-    async def test_auto_fill_form_data(self):
+    async def test_check_fill_data(self):
         try:
             # Step 1: Define the message to send to the AI model
             message = ("I am Liu Ting, my phone number is+61 401 234 567, and my email address is "
@@ -31,30 +32,43 @@ class TesAutoForm(IsolatedAsyncioTestCase):
                 model="mistralai/Mixtral-8x7B-Instruct-v0.1",
                 messages=[{"role": "user", "content": message}],
             )
-            await self.result_to_file(response, 'test_auto_fill_form_response')
+            await self.result_to_file(response, 'test_check_fill_data_response')
 
             # Step 3: Extract the form data from the response‘
             form_data = response.choices[0].message.content
-            await self.result_to_file(form_data, 'test_auto_fill_form_data')
+            await self.result_to_file(form_data, 'test_check_fill_data')
 
         except Exception as e:
             print(e)
 
     # 提供URL地址和goal内容提取表单字段
-    async def test_auto_fill_form(self):
+    async def test_auto_form_field(self):
         try:
-            web_url = 'https://enpc1.uhomes.com/hackson'
-            message = (f'open the {web_url}, retrieve the fields name for this page form, Take a screenshot of this '
-                       f'page and return it in base64 format.')
+            message = (f'open the {self.web_url}, retrieve the fields name for this page form, screenshot this '
+                       f'page image base64 format.')
 
             response = await sentient.invoke(
                 goal=message,
                 provider="together",
                 model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
 
-            await self.result_to_file(response, 'test_auto_fill_form_response')
-            result = response.choices[0].message.content
-            await self.result_to_file(result, 'test_auto_fill_form_data')
+            await self.result_to_file(response, 'test_auto_form_field_response')
+
+        except Exception as e:
+            print(e)
+
+    # 提供URL地址和goal自动填充表单字段
+    async def test_auto_fill_form_field(self):
+        try:
+            message = (f'open the {self.web_url}, retrieve the fields name for this page form, screenshot this '
+                       f'page image base64 format.')
+
+            response = await sentient.invoke(
+                goal=message,
+                provider="together",
+                model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
+
+            await self.result_to_file(response, 'test_auto_fill_form_field_response')
 
         except Exception as e:
             print(e)
