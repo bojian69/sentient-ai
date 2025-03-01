@@ -1,24 +1,11 @@
 {
   "role": "WebArea",
-  "name": "uhomes.com",
+  "name": "\u5f02\u4e61\u597d\u5c45",
   "children": [
-    {
-      "name": "\ue8bb",
-      "mmid": "69",
-      "tag": "a"
-    },
-    {
-      "role": "textbox",
-      "name": "Search City | University | Neighborhood | Property",
-      "mmid": "75",
-      "tag": "input",
-      "tag_type": "text",
-      "placeholder": "Search City | University | Neighborhood | Property"
-    },
     {
       "role": "heading",
       "name": "Rental Application Form",
-      "mmid": "208",
+      "mmid": "35",
       "tag": "h2"
     },
     {
@@ -28,7 +15,7 @@
     {
       "role": "heading",
       "name": "Personal Information",
-      "mmid": "211",
+      "mmid": "38",
       "tag": "h3"
     },
     {
@@ -38,14 +25,10 @@
     {
       "role": "textbox",
       "name": "Enter your first name",
-      "mmid": "218",
+      "mmid": "45",
       "tag": "input",
       "tag_type": "text",
       "placeholder": "Enter your first name"
-    },
-    {
-      "role": "text",
-      "name": "First name is required"
     },
     {
       "role": "text",
@@ -54,26 +37,10 @@
     {
       "role": "textbox",
       "name": "Enter your last name",
-      "mmid": "225",
+      "mmid": "51",
       "tag": "input",
       "tag_type": "text",
       "placeholder": "Enter your last name"
-    },
-    {
-      "role": "text",
-      "name": "Last name is required"
-    },
-    {
-      "role": "text",
-      "name": "Birthday"
-    },
-    {
-      "role": "textbox",
-      "name": "Select your birthday",
-      "mmid": "231",
-      "tag": "input",
-      "tag_type": "text",
-      "placeholder": "Select your birthday"
     },
     {
       "role": "text",
@@ -82,14 +49,10 @@
     {
       "role": "textbox",
       "name": "example@email.com",
-      "mmid": "241",
+      "mmid": "56",
       "tag": "input",
       "tag_type": "text",
       "placeholder": "example@email.com"
-    },
-    {
-      "role": "text",
-      "name": "Email is required"
     },
     {
       "role": "text",
@@ -98,54 +61,15 @@
     {
       "role": "textbox",
       "name": "(555) 000-0000",
-      "mmid": "247",
+      "mmid": "61",
       "tag": "input",
       "tag_type": "text",
       "placeholder": "(555) 000-0000"
     },
     {
-      "role": "text",
-      "name": "Phone number is required"
-    },
-    {
-      "role": "heading",
-      "name": "Academic Information",
-      "mmid": "249",
-      "tag": "h3"
-    },
-    {
-      "role": "text",
-      "name": "University Name"
-    },
-    {
-      "role": "textbox",
-      "name": "Enter your university name",
-      "mmid": "254",
-      "tag": "input",
-      "tag_type": "text",
-      "placeholder": "Enter your university name"
-    },
-    {
-      "role": "text",
-      "name": "University name is required"
-    },
-    {
-      "role": "text",
-      "name": "Nationality"
-    },
-    {
-      "role": "textbox",
-      "name": "Select your nationality",
-      "readonly": true,
-      "mmid": "261",
-      "tag": "input",
-      "tag_type": "text",
-      "placeholder": "Select your nationality"
-    },
-    {
       "role": "heading",
       "name": "Additional Information",
-      "mmid": "293",
+      "mmid": "62",
       "tag": "h3"
     },
     {
@@ -155,340 +79,19 @@
     {
       "role": "textbox",
       "name": "Please provide any additional information",
-      "mmid": "298",
+      "mmid": "67",
       "tag": "textarea",
       "placeholder": "Please provide any additional information"
     },
     {
       "name": "Clear Form",
-      "mmid": "300",
+      "mmid": "69",
       "tag": "button"
     },
     {
       "name": "Submit Application",
-      "mmid": "302",
+      "mmid": "71",
       "tag": "button"
-    },
-    {
-      "role": "text",
-      "name": "uhomes.com is a global student accommodation marketplace that offers over 2 million beds in 500+ popular cities worldwide, dedicated to finding international students the best student homes at affordable prices. Partnered with leading student services brands, we ensure students the easiest life while pursuing higher education."
-    },
-    {
-      "name": "4.9/5 on Trustpilot Excellent Rated",
-      "mmid": "322",
-      "tag": "a",
-      "text": "4.9/5 on Trustpilot\n\nExcellent Rated"
-    },
-    {
-      "role": "text",
-      "name": "English"
-    },
-    {
-      "role": "text",
-      "name": "Popular Cities"
-    },
-    {
-      "name": "London",
-      "mmid": "361",
-      "tag": "a"
-    },
-    {
-      "name": "Glasgow",
-      "mmid": "362",
-      "tag": "a"
-    },
-    {
-      "name": "Manchester",
-      "mmid": "363",
-      "tag": "a"
-    },
-    {
-      "name": "Sydney",
-      "mmid": "364",
-      "tag": "a"
-    },
-    {
-      "name": "Melbourne",
-      "mmid": "365",
-      "tag": "a"
-    },
-    {
-      "name": "Leeds",
-      "mmid": "366",
-      "tag": "a"
-    },
-    {
-      "name": "Sheffield",
-      "mmid": "367",
-      "tag": "a"
-    },
-    {
-      "name": "Southampton",
-      "mmid": "368",
-      "tag": "a"
-    },
-    {
-      "name": "Birmingham",
-      "mmid": "369",
-      "tag": "a"
-    },
-    {
-      "name": "Liverpool",
-      "mmid": "370",
-      "tag": "a"
-    },
-    {
-      "name": "Edinburgh",
-      "mmid": "371",
-      "tag": "a"
-    },
-    {
-      "name": "New York",
-      "mmid": "372",
-      "tag": "a"
-    },
-    {
-      "name": "Coventry",
-      "mmid": "373",
-      "tag": "a"
-    },
-    {
-      "name": "Newcastle",
-      "mmid": "374",
-      "tag": "a"
-    },
-    {
-      "name": "Toronto",
-      "mmid": "375",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Top Universities"
-    },
-    {
-      "name": "University of Glasgow",
-      "mmid": "380",
-      "tag": "a"
-    },
-    {
-      "name": "University of Manchester",
-      "mmid": "381",
-      "tag": "a"
-    },
-    {
-      "name": "University College London (UCL)",
-      "mmid": "382",
-      "tag": "a"
-    },
-    {
-      "name": "University of Sheffield",
-      "mmid": "383",
-      "tag": "a"
-    },
-    {
-      "name": "University of Leeds",
-      "mmid": "384",
-      "tag": "a"
-    },
-    {
-      "name": "University of Liverpool",
-      "mmid": "385",
-      "tag": "a"
-    },
-    {
-      "name": "University of Sydney",
-      "mmid": "386",
-      "tag": "a"
-    },
-    {
-      "name": "University of Birmingham",
-      "mmid": "387",
-      "tag": "a"
-    },
-    {
-      "name": "King's College London (KCL)",
-      "mmid": "388",
-      "tag": "a"
-    },
-    {
-      "name": "University of Melbourne",
-      "mmid": "389",
-      "tag": "a"
-    },
-    {
-      "name": "University of Southampton",
-      "mmid": "390",
-      "tag": "a"
-    },
-    {
-      "name": "University of Queensland",
-      "mmid": "391",
-      "tag": "a"
-    },
-    {
-      "name": "University of New South Wales (UNSW)",
-      "mmid": "392",
-      "tag": "a"
-    },
-    {
-      "name": "University of Warwick",
-      "mmid": "393",
-      "tag": "a"
-    },
-    {
-      "name": "Newcastle University",
-      "mmid": "394",
-      "tag": "a"
-    },
-    {
-      "name": "Northeastern University (Boston)",
-      "mmid": "395",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Company"
-    },
-    {
-      "name": "About Us",
-      "mmid": "400",
-      "tag": "a"
-    },
-    {
-      "name": "Careers",
-      "mmid": "401",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Refer to Earn"
-    },
-    {
-      "role": "text",
-      "name": "\u00a350"
-    },
-    {
-      "name": "uhomes+ New",
-      "mmid": "405",
-      "tag": "a"
-    },
-    {
-      "name": "Accommodation",
-      "mmid": "407",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Partnership"
-    },
-    {
-      "name": "Become Partner",
-      "mmid": "412",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Partner Login"
-    },
-    {
-      "name": "Add Property",
-      "mmid": "414",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Support"
-    },
-    {
-      "name": "Help Center",
-      "mmid": "421",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "WhatsApp"
-    },
-    {
-      "name": "+44 207 631 5139",
-      "mmid": "427",
-      "tag": "a"
-    },
-    {
-      "name": "Contact Us",
-      "mmid": "430",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": "Download our APP"
-    },
-    {
-      "role": "link",
-      "name": "",
-      "mmid": 435
-    },
-    {
-      "role": "link",
-      "name": "",
-      "mmid": 437
-    },
-    {
-      "role": "text",
-      "name": "Payment Methods"
-    },
-    {
-      "role": "text",
-      "name": "Media"
-    },
-    {
-      "role": "link",
-      "name": "",
-      "mmid": 447
-    },
-    {
-      "role": "link",
-      "name": "",
-      "mmid": 449
-    },
-    {
-      "role": "link",
-      "name": "",
-      "mmid": 451
-    },
-    {
-      "role": "link",
-      "name": "",
-      "mmid": 453
-    },
-    {
-      "name": "Terms",
-      "mmid": "459",
-      "tag": "a"
-    },
-    {
-      "name": "Privacy",
-      "mmid": "460",
-      "tag": "a"
-    },
-    {
-      "name": "Cookies",
-      "mmid": "461",
-      "tag": "a"
-    },
-    {
-      "name": "Info Docs",
-      "mmid": "462",
-      "tag": "a"
-    },
-    {
-      "name": "Sitemap",
-      "mmid": "463",
-      "tag": "a"
-    },
-    {
-      "role": "text",
-      "name": " 2025 uhomes.com"
     }
   ]
 }

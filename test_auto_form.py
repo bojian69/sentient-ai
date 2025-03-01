@@ -4,7 +4,7 @@ from together import AsyncTogether
 from sentient import sentient
 from dotenv import load_dotenv
 import re
-
+import datetime
 
 load_dotenv()
 
@@ -18,6 +18,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
         self.async_client = AsyncTogether(api_key=os.environ.get("TOGETHER_API_KEY"))
         print("setUp: end")
 
+    # 提取会话文案-预检模版缺失项
     async def test_auto_fill_form_data(self):
         try:
             # Step 1: Define the message to send to the AI model
@@ -30,30 +31,58 @@ class TesAutoForm(IsolatedAsyncioTestCase):
                 model="mistralai/Mixtral-8x7B-Instruct-v0.1",
                 messages=[{"role": "user", "content": message}],
             )
+            await self.result_to_file(response, 'test_auto_fill_form_response')
 
             # Step 3: Extract the form data from the response‘
             form_data = response.choices[0].message.content
-            print("Form Data:", form_data)
+            await self.result_to_file(form_data, 'test_auto_fill_form_data')
 
         except Exception as e:
             print(e)
 
+    # 提供URL地址和goal内容提取表单字段
     async def test_auto_fill_form(self):
         try:
             web_url = 'https://enpc1.uhomes.com/hackson'
-            message = f'Open the {web_url} and retrieve the fields name for this page form'
+            message = (f'open the {web_url}, retrieve the fields name for this page form, Take a screenshot of this '
+                       f'page and return it in base64 format.')
 
-            result = await sentient.invoke(
+            response = await sentient.invoke(
                 goal=message,
                 provider="together",
                 model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
 
-            print(result)
+            await self.result_to_file(response, 'test_auto_fill_form_response')
+            result = response.choices[0].message.content
+            await self.result_to_file(result, 'test_auto_fill_form_data')
 
         except Exception as e:
             print(e)
 
+    # 测试执行结果填入执行文件
+    async def test_result_to_file(self):
+        try:
+            result = 'Hello, world!'
+            await self.result_to_file(result, 'test')
+        except Exception as e:
+            print(e)
 
+    # 将结果生成文件
+    async def result_to_file(self, result, file_name='test'):
+        try:
+            current_time = datetime.datetime.now()
+            time_str = current_time.strftime("%Y%m%d%H%M%S")[2:]
+            directory = 'result_file'
+            path = f'{directory}/{file_name}_{time_str}.log'
+            # Create the directory if it does not exist
+            os.makedirs(directory, exist_ok=True)
+            # Convert result to string if it is not already
+            result_str = str(result)
+            with open(path, 'w') as f:
+                f.write(result_str)
+
+        except Exception as e:
+            print(e)
 
     async def asyncTearDown(self):
         # Clean up resources if needed
