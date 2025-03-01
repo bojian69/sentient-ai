@@ -24,8 +24,10 @@ class TesAutoForm(IsolatedAsyncioTestCase):
         try:
             # Step 1: Define the message to send to the AI model
             message = ("I am Liu Ting, my phone number is+61 401 234 567, and my email address is "
-                       "liuting@domain.com The form items require last name, first name, email, and "
-                       "phone number to extract the required content from the form")
+                       "liuting@domain.com;"
+                       "The fields name for this page form are 'First Name', 'Last Name', 'Email', 'Phone Number'"
+                       ", and 'Additional Notes'; "
+                       "Which fields are still missing from filling out this page form?")
 
             # Step 2: Send the message to the AI model and get the response
             response = await self.async_client.chat.completions.create(
@@ -37,6 +39,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
             # Step 3: Extract the form data from the response‘
             form_data = response.choices[0].message.content
             await self.result_to_file(form_data, 'test_check_fill_data')
+            print(form_data)
 
         except Exception as e:
             print(e)
@@ -53,6 +56,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
                 model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
 
             await self.result_to_file(response, 'test_auto_form_field_response')
+            print(response)
 
         except Exception as e:
             print(e)
@@ -62,7 +66,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
         try:
             message = (f'open the {self.web_url};'
                        f'fill the form fields with the following information: First Name:bojian, Last Name:li,'
-                       f'Email:boj@uhomes.com, Phone Number:+86 13011070322;'
+                       f'Email:boj@uhomes.com, Phone Number:+86 13011070322, Additional Notes Beijing'
                        f'click the submit button, screenshot this page image base64 format.')
 
             response = await sentient.invoke(
@@ -71,6 +75,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
                 model="meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo")
 
             await self.result_to_file(response, 'test_auto_fill_form_response')
+            print(response)
 
         except Exception as e:
             print(e)
