@@ -1,0 +1,31 @@
+ Sure, I can help you analyze the user submitted scripts and inform you of any missing form fields. To do this, I will compare the form field names with the data provided in the user submitted scripts.
+
+For the given form fields:
+
+* First Name
+* Last Name
+* Email
+* Phone Number
+* Additional Notes
+
+And the provided user details:
+
+* Name: Liu Ting
+* Phone Number: +61 401 234 567
+* Email: [liuting@domain.com](mailto:liuting@domain.com)
+
+Now, let's say a user submits the following script:
+
+"Hello, my name is John Doe and my email is johndoe@example.com. I would like to inquire about your services."
+
+To analyze this script, I will look for the presence of the required form fields:
+
+* First Name: Not provided (user provided their full name in the message instead)
+* Last Name: Not provided (user provided their full name in the message instead)
+* Email: Provided (user provided their email address in the message)
+* Phone Number: Not provided
+* Additional Notes: Provided (user provided some additional notes in the message)
+
+Therefore, the missing form fields for this script are 'First Name', 'Last Name', and 'Phone Number'.
+
+You can use this method to analyze any user submitted scripts and determine if any form fields are missing.

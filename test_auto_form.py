@@ -27,7 +27,8 @@ class TesAutoForm(IsolatedAsyncioTestCase):
                        "liuting@domain.com;"
                        "The fields name for this page form are 'First Name', 'Last Name', 'Email', 'Phone Number'"
                        ", and 'Additional Notes'; "
-                       "Which fields are still missing from filling out this page form?")
+                       "Please help me analyze the scripts submitted by users and inform me of the missing form "
+                       "fields corresponding to the form content.")
 
             # Step 2: Send the message to the AI model and get the response
             response = await self.async_client.chat.completions.create(
