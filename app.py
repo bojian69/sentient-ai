@@ -73,10 +73,23 @@ async def submit(goal: str = Form(...), model: str = Form(...)):
 
 @app.post("/chat/async/message")
 async def message(uuid: str = Form(...)):
-    return {"uuid": uuid, "message": message}
+    # message 数据存入 Redis
+    redis = aioredis.from_url('redis://localhost', decode_responses=True)
+    response = await redis.get(name=f'{redis_prefix}:{uuid}')
+    await redis.close()
+
+    if response is None:
+        raise HTTPException(status_code=404, detail="Message not found")
+    response = json.loads(response)
+    return {
+        'goal': response['goal'], 
+        'message': response['message'],
+        'model': response['model'],
+        'uuid': uuid
+    }
 
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
