@@ -58,21 +58,25 @@ async def submit(goal: str = Form(...), model: str = Form(...)):
             message = str(e)
             print(message)
 
-    # message 数据存入 Redis
-    redis = aioredis.from_url('redis://localhost', decode_responses=True)
-    await redis.set(
-        name=f'{redis_prefix}:{uuid_str}',
-        value=json.dumps({
+    # 格式化返回数据
+    response = {
+            'uuid': uuid_str,
             'goal': goal,
             'message': message,
             'model': model,
             'timestamp': datetime.datetime.now().timestamp(),
-        }, ensure_ascii=False),
+        }
+
+    # message 数据存入 Redis
+    redis = aioredis.from_url('redis://localhost', decode_responses=True)
+    await redis.set(
+        name=f'{redis_prefix}:{uuid_str}',
+        value=json.dumps(response, ensure_ascii=False),
         ex=3600 * 24 * 7
     )
     await redis.close()
 
-    return {"message": message, "model": model, "uuid": uuid_str}
+    return response
 
 
 @app.post("/chat/async/message")
