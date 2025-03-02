@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Form
+from fastapi import FastAPI, HTTPException, Form, Request
 from pydantic import BaseModel
 import uuid, os, json, datetime
 from together import AsyncTogether
@@ -32,10 +32,16 @@ async def model():
 
 
 @app.post("/chat/async/submit")
-async def submit(goal: str = Form(...), model: str = Form(...)):
+async def submit(request: Request, goal: str = Form(...), model: str = Form(...)):
+    # 打印请求的内容
+    print(await request.form())
     uuid_str = str(uuid.uuid4())
     print('TOGETHER_API_KEY:', os.environ.get("TOGETHER_API_KEY"))
     async_client = AsyncTogether(api_key=os.environ.get("TOGETHER_API_KEY"))
+    print({
+        'goal': goal,
+        'model': model,
+    })
     message = ''
     # 切换检索模型
     if model == 'mistralai/Mixtral-8x7B-Instruct-v0.1':
@@ -64,7 +70,7 @@ async def submit(goal: str = Form(...), model: str = Form(...)):
             'goal': goal,
             'message': message,
             'model': model,
-            'timestamp': datetime.datetime.now().timestamp(),
+            'timestamp': datetime.datetime.now().timestamp()
         }
 
     # message 数据存入 Redis
@@ -74,7 +80,7 @@ async def submit(goal: str = Form(...), model: str = Form(...)):
         value=json.dumps(response, ensure_ascii=False),
         ex=3600 * 24 * 7
     )
-    await redis.close()
+    await redis.aclose()
 
     return response
 
@@ -84,7 +90,7 @@ async def message(uuid: str = Form(...)):
     # message 数据存入 Redis
     redis = aioredis.from_url('redis://localhost', decode_responses=True)
     response = await redis.get(name=f'{redis_prefix}:{uuid}')
-    await redis.close()
+    await redis.aclose()
 
     if response is None:
         raise HTTPException(status_code=404, detail="Message not found")

@@ -48,8 +48,7 @@ class TesAutoForm(IsolatedAsyncioTestCase):
     # 提供URL地址和goal内容提取表单字段
     async def test_auto_form_field(self):
         try:
-            message = (f'open the {self.web_url}, retrieve the fields name for this page form, screenshot this '
-                       f'page image base64 format.')
+            message = (f'open the {self.web_url}, retrieve the fields name for this page form')
 
             response = await sentient.invoke(
                 goal=message,
