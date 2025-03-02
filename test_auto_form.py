@@ -30,6 +30,8 @@ class TesAutoForm(IsolatedAsyncioTestCase):
                        "Please help me analyze the scripts submitted by users and inform me of the missing form "
                        "fields corresponding to the form content.")
 
+            print(message)
+
             # Step 2: Send the message to the AI model and get the response
             response = await self.async_client.chat.completions.create(
                 model="mistralai/Mixtral-8x7B-Instruct-v0.1",
