@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException, Form
 from pydantic import BaseModel
-import uuid
-import os, asyncio, json
+import uuid, os, json, datetime
 from together import AsyncTogether
 from sentient import sentient
 from dotenv import load_dotenv
@@ -63,7 +62,12 @@ async def submit(goal: str = Form(...), model: str = Form(...)):
     redis = aioredis.from_url('redis://localhost', decode_responses=True)
     await redis.set(
         name=f'{redis_prefix}:{uuid_str}',
-        value=json.dumps({'goal': goal, 'message': message, 'model': model}, ensure_ascii=False),
+        value=json.dumps({
+            'goal': goal,
+            'message': message,
+            'model': model,
+            'timestamp': datetime.datetime.now().timestamp(),
+        }, ensure_ascii=False),
         ex=3600 * 24 * 7
     )
     await redis.close()
@@ -80,12 +84,18 @@ async def message(uuid: str = Form(...)):
 
     if response is None:
         raise HTTPException(status_code=404, detail="Message not found")
+
     response = json.loads(response)
+    # 判断timestamp是否存在
+    if 'timestamp' not in response:
+        response['timestamp'] = datetime.datetime.now().timestamp()
+
     return {
-        'goal': response['goal'], 
+        'goal': response['goal'],
         'message': response['message'],
         'model': response['model'],
-        'uuid': uuid
+        'uuid': uuid,
+        'timestamp': response['timestamp']
     }
 
 
